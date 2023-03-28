@@ -27,6 +27,11 @@ public class EmployeeController {
 
 	@Autowired
 	private EmployeeService employeeService;
+	
+	@GetMapping
+	public String service(){
+		return "Hello Employee Service";
+	}
 
 	@PostMapping
 	public Employee saveEmployee(@RequestBody Employee toSave) {
