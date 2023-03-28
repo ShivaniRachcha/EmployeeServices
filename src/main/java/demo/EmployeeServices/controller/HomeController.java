@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
 
 	@GetMapping("/test")
-	public String hello() {
+	public @ResponseBody String hello() {
 		return "HIIIIIIIIIII";
 	}
 }
